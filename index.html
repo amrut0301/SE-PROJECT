@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite | Online Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Quick<span>Bite</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#cart" class="cart-link">
+            🛒 Cart <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">FRESH FOOD • FAST DELIVERY</p>
+            <h1>Your Favourite Food,<br>
+                <span>Delivered Fast.</span>
+            </h1>
+            <p>
+                Delicious meals from your favourite restaurants,
+                delivered straight to your doorstep.
+            </p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85"
+                alt="Freshly prepared pizza">
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="section-heading">
+            <p class="tagline">OUR MENU</p>
+            <h2>Explore Our <span>Delicious Food</span></h2>
+            <p>Choose your favourite meal and order now!</p>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search pizza, burger, biryani..."
+                aria-label="Search food">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="food-grid" id="food-grid"></div>
+        <p id="no-results" hidden>No food items found. Try another search.</p>
+    </section>
+
+    <section class="cart-section" id="cart">
+        <div class="section-heading">
+            <p class="tagline">YOUR ORDER</p>
+            <h2>My <span>Shopping Cart</span></h2>
+        </div>
+
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty. Add some delicious food!</p>
+        </div>
+
+        <div class="cart-summary">
+            <div class="total-row">
+                <span>Subtotal</span>
+                <span id="subtotal">₹0</span>
+            </div>
+            <div class="total-row">
+                <span>Delivery Fee</span>
+                <span id="delivery-fee">₹0</span>
+            </div>
+            <div class="total-row grand-total">
+                <span>Total Amount</span>
+                <span id="total">₹0</span>
+            </div>
+
+            <button id="checkout-btn" class="btn checkout-btn">
+                Place Order
+            </button>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>Why Choose QuickBite?</h2>
+        <div class="benefits">
+            <div>
+                <span>🍕</span>
+                <h3>Quality Food</h3>
+                <p>Fresh and delicious meals.</p>
+            </div>
+            <div>
+                <span>🚀</span>
+                <h3>Fast Delivery</h3>
+                <p>Your cravings, delivered faster.</p>
+            </div>
+            <div>
+                <span>💳</span>
+                <h3>Easy Ordering</h3>
+                <p>A simple and convenient experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Quick<span>Bite</span></h2>
+        <p>Good food. Great mood. Delivered with love.</p>
+        <p>© 2026 QuickBite. All rights reserved.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
